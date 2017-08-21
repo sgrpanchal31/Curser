@@ -11,7 +11,9 @@ $(document).ready(function() {
         contentType: "application/json; charset=utf-8",
         headers: { 'Access-Control-Allow-Origin': '*' },
         crossDomain: true,
-        dataType: 'jsonp',
+        jsonpCallback: 'callback',
+        dataType: 'JSONP',
+        jsonp: 'callback',
         success: function(response){
             console.log(response.words);
         }

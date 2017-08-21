@@ -8,3 +8,17 @@ h1{
     text-transform: uppercase;
     color:white;
 }
+.social{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    float:right;
+    padding:10px 15px;
+    text-align: right;
+}
+.social a{
+    color:white;
+    font-size:30px;
+
+}
