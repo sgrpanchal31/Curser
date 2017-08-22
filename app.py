@@ -20,7 +20,7 @@ words = [
 
 @app.route('/curse/api/v1.0/words/', methods=['GET'])
 def get_words():
-    return jsonify({'words': words})
+    return jsonify({'words':words})
 
 
 @app.route('/curse/api/v1.0/words/<int:word_id>', methods=['GET'])

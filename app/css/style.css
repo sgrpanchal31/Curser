@@ -14,11 +14,18 @@ h1{
     left:0;
     width:100%;
     float:right;
-    padding:10px 15px;
-    text-align: right;
+    padding:15px 20px;
 }
-.social a{
-    color:white;
+.linkbox{
+    position: relative;
+    float:left;
+    display:inline;
+    width:33.33%;
+    text-align: center;
+}
+.linkbox a{
+    width:100%;
+    color:#ccc;
     font-size:30px;
-
+    width:33.3vw;
 }
