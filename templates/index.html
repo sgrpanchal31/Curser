@@ -8,7 +8,7 @@
     <meta name="description" content="The HTML5 Herald">
 
 
-    <link rel="stylesheet" href="app/css/style.css">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!--[if lt IE 9]>
@@ -20,7 +20,7 @@
     <h1><i>You mother fucking piece of shit</i></h1>
 
     <div class="social">
-        <div class="linkbox">
+        <div class="linkbox"> Share it on
             <a href="#"><i class="fa fa-facebook"></i></a>
         </div>
         <div class="linkbox">
@@ -31,7 +31,7 @@
         </div>
     </div>
 
-    <script src="app/js/jquery.min.js"></script>
-    <script src="app/js/script.js"></script>
+    <script src="{{url_for('static', filename='js/jquery.min.js')}}"></script>
+    <script src="{{url_for('static', filename='js/script.js')}}"></script>
 </body>
 </html>

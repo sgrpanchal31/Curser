@@ -5,6 +5,8 @@ from flask import abort
 from flask import make_response
 from flask import request
 
+from flask import render_template
+
 app = Flask(__name__)
 
 words = [
@@ -17,6 +19,12 @@ words = [
         'title': u'blowjob'
     }
 ]
+#############
+@app.route('/index')
+def index():
+    return render_template('index.html')
+
+#############
 
 @app.route('/curse/api/v1.0/words/', methods=['GET'])
 def get_words():
