@@ -2,17 +2,10 @@ $(document).ready(function() {
     console.log("hid");
 
     $.ajax({
-        url:"http://localhost:5000/curse/api/v1.0/words/",
-        // url:"https://jsonplaceholder.typicode.com/posts/1",
+        url:"http://127.0.0.1:5000/curse/api/v1.0/words/",
         type:"GET",
-        // dataType :"jsonp",
-        // "Content-type": "application/json",
-        headers: { 'Access-Control-Allow-Origin': '*' },
-        crossDomain: true,
         cache: false,
         asynch:false,
-        // jsonp: false,
-        // jsonpCallback: "myJsonMethod",
         success: function(response){
             console.log(response);
         }

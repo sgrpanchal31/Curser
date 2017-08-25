@@ -3,10 +3,24 @@ body{
     background: -webkit-linear-gradient(to left, #26D0CE, #1A2980);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to left, #26D0CE, #1A2980); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+.h1cont{
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+}
 h1{
+    margin:0;
+    position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
     font-size: 10vw;
     text-transform: uppercase;
     color:white;
+
 }
 .social{
     position: fixed;
@@ -14,7 +28,6 @@ h1{
     left:0;
     width:100%;
     float:right;
-    padding:15px 20px;
 }
 .linkbox{
     position: relative;
@@ -22,10 +35,38 @@ h1{
     display:inline;
     width:33.33%;
     text-align: center;
+    background-color: red;
+    color:#fff;
+    padding: 12px 0;
+    font-size:24px;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family:arial;
 }
-.linkbox a{
-    width:100%;
-    color:#ccc;
-    font-size:30px;
-    width:33.3vw;
+.linkbox:nth-child(1){
+    background-color: #3b5998;
+}
+.linkbox:nth-child(2){
+    background-color: black;
+}
+.linkbox:nth-child(3){
+    background-color:#55acee;
+}
+.linkbox i{
+    transition: all 3s ease-in;
+}
+.linkbox p{
+    margin:0;
+    display:none;
+    font-size: 14px;
+    font-weight: lighter;
+    transition: all 0.3s ease-in 0.3s;
+}
+.linkbox:hover p{
+    display:block;
+    margin:6px;
+}
+.linkbox:hover i{
+    display:none;
 }
