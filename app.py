@@ -20,6 +20,10 @@ words = [
         'title': u'blowjob'
     }
 ]
+
+con = sqlite3.connect('test.db')
+
+
 #############
 @app.route('/index')
 def index():
@@ -29,6 +33,11 @@ def index():
 
 @app.route('/curse/api/v1.0/words/', methods=['GET'])
 def get_words():
+    cur = con.cursor()
+    cur.execute("select * from words")
+
+    words = cur.fetchall();
+    print "hello"
     return jsonify({'words':words})
 
 
