@@ -37,7 +37,7 @@ def get_words():
     cur.execute("select * from words")
 
     words = cur.fetchall();
-    print "hello"
+    # print "hello"
     return jsonify({'words':words})
 
 
